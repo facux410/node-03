@@ -44,7 +44,7 @@ class UsersDao {
   }
 
   async getUserById(userId: string) {
-    return this.User.findOne({ _id: userId }).populate("User").exec();
+    return this.User.findOne({ _id: userId }).exec();
   }
 
   async getUsers(limit = 25, page = 0) {
